@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styled.css">
+</head>
+<body>
+    <nav class="navbar bg-dark sticky-top" data-bs-theme="dark">
+        <div class="container-lg">
+            <span class="navbar-brand mb-0 h1">🎓 JavaScript Basics - Interactive Learning</span>
+        </div>
+    </nav>
+
+    <div class="container-lg">
+        
+
+        <!-- BONUS: COMBINED CHALLENGE -->
+        <div class="lesson-card" style="border-left-color: #6f42c1;">
+            <div class="p-4">
+                <div class="lesson-title">
+                    <span class="badge bg-info badge-lesson">Bonus</span>
+                    Challenge: Todo App with All Concepts
+                </div>
+
+                <div class="problem-section">
+                    <h5>📌 Your Challenge:</h5>
+                    <p>Create a complete todo app that combines all concepts:</p>
+                    <ul style="margin: 10px 0 0 20px;">
+                        <li>Add todos (DOM + Event Listeners)</li>
+                        <li>Mark todos as priority (high/medium/low) with different colors (If/Else)</li>
+                        <li>Show statistics: total todos, completed todos (Loops)</li>
+                    </ul>
+                </div>
+
+                <h5 style="margin-top: 20px;">💻 Interactive Area:</h5>
+                <div class="interactive-area">
+                    <div style="margin-bottom: 15px;">
+                        <input type="text" id="todoInput" placeholder="What do you need to do?">
+                        <select id="prioritySelect" style="margin-left: 10px;">
+                            <option value="low">Low Priority</option>
+                            <option value="medium" selected>Medium Priority</option>
+                            <option value="high">High Priority</option>
+                        </select>
+                        <button class="btn-primary-custom" onclick="addTodo()" style="margin-left: 10px;">Add Todo</button>
+                    </div>
+                    <div id="todoStats" style="margin-bottom: 15px; padding: 10px; background: #e7f3ff; border-radius: 5px;">
+                        <strong>Total Todos: <span id="totalCount">0</span> | Completed: <span id="completedCount">0</span></strong>
+                    </div>
+                    <div id="todosList"></div>
+                </div>
+
+                <div class="hint">
+                    <strong>📝 What you need to code:</strong>
+                    <ol style="margin: 10px 0 0 20px; font-size: 0.95rem;">
+                        <li>Create an array to store todos</li>
+                        <li>Write addTodo() to add items to the array</li>
+                        <li>Write toggleTodo() to mark as complete/incomplete</li>
+                        <li>Write deleteTodo() to remove items</li>
+                        <li>Write renderTodos() to display all todos using forEach</li>
+                        <li>Write updateStats() to count total and completed todos</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+</html>
